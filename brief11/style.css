@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.input{
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(7, 7, 7);
+}
+tr ,td{
+    
+    border: none;
+
+}
+#form{
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    margin-top: -4em;height:500"
+}
+#printb{
+    
+    background-color: antiquewhite;
+    border-radius: 10px;
+    height: 40px;
+    width: 200px;
+    margin-left: 30%;
+   
+    
+}
+#submit{
+    background-color: antiquewhite;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+}
+
+@media print {
+    *{
+      font-size: 13px;
+    
+    }
+     header,main, form, footer{
+      display: none;
+    }
+    #printb,#form{
+        display: none;
+    }
+    main{
+      margin-top: 25vh;
+      border: 10px;
+    }
+     #tranche2{
+         display: none;
+     }
+    
+    }
